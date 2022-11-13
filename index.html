@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Ejemplo de loading con CSS</title>
+    <style>
+        .loading {
+            border: 5px solid rgba(256, 0, 0, .5);
+            width: 30px;  
+            height: 30px; 
+            border-radius: 50%;
+            border-left-color: transparent;
+            animation: loading 1s linear infinite;
+        }
+
+        @keyframes loading {
+            0%
+        {
+            transform: rotate(0deg);
+         }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <center><div class ="loading"></div></center>
+    
+</body>
+</html>
